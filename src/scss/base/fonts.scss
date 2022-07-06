@@ -1,1 +1,7 @@
-$font-base-url: "../../fonts/";
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fonts/montserrat-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
