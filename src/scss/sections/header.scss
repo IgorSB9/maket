@@ -1,2 +1,31 @@
+* {
+  font-family: "Montserrat";
+}
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 120px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  padding: 10px;
+  color: #0d6eb7;
+}
+
+.header__logo {
+  width: 208px;
+  height: 53px;
+}
+
+.header__button {
+  border: 1px solid black;
+  padding: 13px 24px;
+  border: 2px solid #06b25f;
+  border-radius: 6px;
+  color: #06b25f;
 }
