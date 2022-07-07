@@ -12,8 +12,8 @@ $breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1280px,
-  xxl: 1536px,
-  xxxl: 1920px,
+  xxl: 1420px,
+  xxxl: 1740px,
 );
 
 @mixin media-breakpoint-up($name, $grid-breakpoints: $breakpoints) {

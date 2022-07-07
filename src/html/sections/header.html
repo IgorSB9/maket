@@ -1,14 +1,53 @@
+<input id="menu__toggle" type="checkbox" />
 <header class="header">
-  <img src="../../img/header_logo.png" class="header__logo" />
-  <nav class="header__nav">
-    <ul class="header__nav-list">
-      <li class="header__nav-item"><a>SERVICES</a></li>
-      <li class="header__nav-item"><a>TECHNOLOGIES</a></li>
-      <li class="header__nav-item"><a>PRODUCTS</a></li>
-      <li class="header__nav-item"><a>PORTFOLIO</a></li>
-      <li class="header__nav-item"><a>BLOG</a></li>
-      <li class="header__nav-item"><a>ABOUT US</a></li>
-    </ul>
-  </nav>
-  <button class="header__button">CONTACT US</button>
+  <div class="container">
+    <img src="../../img/header_logo.png" class="header__logo" />
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <span>SERVICES</span>
+          <span class="list__arrow"></span>
+          <div class="nav__popup">
+            <ul class="nav__popup--list">
+              <li class="nav__popup--link">MOBILE APPLICATION DEVELOPMENT</li>
+              <li class="nav__popup--link">GAME DEVELOPMENT OUTSOURCING</li>
+              <li class="nav__popup--link">VR APP DEVELOPMENT</li>
+              <li class="nav__popup--link">DEDICATED DEVELOPERS</li>
+              <li class="nav__popup--link">SDK DEVELOPMENT</li>
+              <li class="nav__popup--link">3D MODELING SERVICES</li>
+              <li class="nav__popup--link">AR APP DEVELOPMENT</li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__nav-item">
+          <span>TECHNOLOGIES</span>
+          <span class="list__arrow"></span>
+        </li>
+        <li class="header__nav-item"><a>PRODUCTS</a></li>
+        <li class="header__nav-item"><a>PORTFOLIO</a></li>
+        <li class="header__nav-item"><a>BLOG</a></li>
+        <li class="header__nav-item">
+          <span>ABOUT US</span>
+          <span class="list__arrow"></span>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__button">CONTACT US</button>
+    <label class="menu__btn" for="menu__toggle">
+      <span class="burger__button"></span>
+    </label>
+    <div class="burger__menu">
+      <div class="burger__container">
+        <ul class="menubox">
+          <li class="header__burger-item"><a>SERVICES</a></li>
+          <li class="header__burger-item"><a>TECHNOLOGIES</a></li>
+          <li class="header__burger-item"><a>PRODUCTS</a></li>
+          <li class="header__burger-item"><a>PORTFOLIO</a></li>
+          <li class="header__burger-item"><a>BLOG</a></li>
+          <li class="header__burger-item"><a>ABOUT US</a></li>
+        </ul>
+        <button class="burger__menu--button">CONTACT US</button>
+      </div>
+    </div>
+  </div>
 </header>
