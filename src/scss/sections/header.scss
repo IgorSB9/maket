@@ -2,8 +2,6 @@
   font-family: "Montserrat";
 }
 .header {
-  // font-family: "Montserrat";
-  // font-weight: 700;
   position: relative;
   width: 100%;
   display: flex;
@@ -25,6 +23,9 @@
   max-width: 700px;
   flex-wrap: wrap;
   display: flex;
+}
+.nav__popup--list {
+  // padding: 12px;
 }
 
 .header__nav-item {
@@ -74,14 +75,14 @@
   position: absolute;
   top: 100%;
   border-top: 3px solid var(--palette-secondary-medium-blue3);
-  padding: 0;
+  padding: 3px 0;
   transform-origin: top;
   box-shadow: 2px 4px 16px rgba(158, 158, 158, 0.4);
   border-radius: 0 0 10px 10px;
 }
 .nav__popup--link {
   font-size: 16px;
-  padding: 10px;
+  padding: 9px;
   color: var(--palette-primary-medium-blue);
   &:hover {
     color: var(--palette-secondary-medium-blue3);
