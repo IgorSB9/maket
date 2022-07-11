@@ -1,41 +1,30 @@
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1420px;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include media-breakpoint-between(sm, md) {
+    max-width: $breakpoints-sm;
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    max-width: $breakpoints-md;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+    max-width: $breakpoints-lg;
+  }
+
+  @include media-breakpoint-between(xl, xxl) {
+    max-width: $breakpoints-xl;
+  }
+
+  @include media-breakpoint-between(xxl, xxxl) {
+    max-width: $breakpoints-xxl;
+  }
+
+  @include media-breakpoint-up(xxxl) {
+    max-width: $breakpoints-xxxl;
+  }
 }
-
-// .container-fluid,
-// .container {
-//   width: 100%;
-//   padding-right: var(--spacing-container);
-//   padding-left: var(--spacing-container);
-
-//   @include media-breakpoint-up(sm) {
-//     margin-right: auto;
-//     margin-left: auto;
-//   }
-
-//   @include media-breakpoint-up(xxl) {
-//     max-width: $breakpoints-xxl;
-//   }
-// }
-
-// .container {
-//   @include media-breakpoint-between(sm, md) {
-//     max-width: $breakpoints-sm;
-//   }
-
-//   @include media-breakpoint-between(md, lg) {
-//     max-width: $breakpoints-md;
-//   }
-
-//   @include media-breakpoint-between(lg, xl) {
-//     max-width: $breakpoints-lg;
-//   }
-
-//   @include media-breakpoint-between(xl, xxl) {
-//     max-width: $breakpoints-xl;
-//   }
-// }
