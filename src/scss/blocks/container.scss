@@ -1,7 +1,6 @@
 .container {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+
   margin: 0 auto;
 
   @include media-breakpoint-between(sm, md) {
@@ -11,6 +10,11 @@
   @include media-breakpoint-down(md) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @include media-breakpoint-between(md, lg) {
