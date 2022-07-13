@@ -1,0 +1,235 @@
+.container {
+  @include media-breakpoint-down(lg) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.hero {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    max-height: 491px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+
+    &-logo {
+      margin-top: 5px;
+      margin-right: 94px;
+      width: 516px;
+
+      @include media-breakpoint-down(xl) {
+        margin-right: 0;
+      }
+      @include media-breakpoint-between(sm, lg) {
+        width: 400px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 255px;
+        height: 222px;
+        margin-top: 0;
+        align-self: center;
+      }
+    }
+
+    &-left {
+      padding: 46px 0;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 0;
+      }
+    }
+  }
+
+  &__content-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top-title {
+    margin-top: 124px;
+    color: #194484;
+    font-size: 44px;
+    font-family: "Harabara";
+    line-height: 60px;
+    letter-spacing: 0.06em;
+
+    @include media-breakpoint-between(xl, xxl) {
+      font-size: 36px;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      font-size: 30px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      font-size: 26px;
+      line-height: 38px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+      line-height: 38px;
+      margin-top: 43px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__content {
+    display: flex;
+    line-height: 26px;
+    justify-content: space-between;
+    max-width: 1245px;
+    gap: 51px;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+
+    &-logo {
+      width: 132px;
+      height: 74px;
+    }
+
+    &-reviews {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 16px;
+      width: 898px;
+      margin-top: 94px;
+      box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+      padding: 29px 33px;
+
+      @include media-breakpoint-down(md) {
+        padding: 17px 0px 61px 0px;
+        height: 294px;
+      }
+
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.hero__reviews-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+.breadcrumb__stack {
+  display: flex;
+  gap: 11px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 5px;
+  }
+}
+
+.breadcrumb__item {
+  display: flex;
+  font-size: 16px;
+  color: #194484;
+  font-family: "Montserrat";
+  font-weight: 400;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 12px;
+  }
+}
+
+.item__arrow {
+  border-bottom: 2px solid #194484;
+  border-right: 2px solid #194484;
+  height: 6px;
+  margin-top: 8px;
+  transform: rotate(-45deg);
+  width: 6px;
+  margin-left: 10px;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 4px;
+  }
+}
+.hero__content-item-content {
+  margin-top: 16px;
+  display: grid;
+  gap: 30px;
+}
+
+.item__content-item-title {
+  color: #0d6eb7;
+  font-size: 24px;
+  font-family: "Harabara";
+  letter-spacing: 0.05em;
+  line-height: 38px;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+.item__text {
+  color: #242424;
+  font-size: 16px;
+  max-width: 553px;
+  font-family: "Montserrat";
+  text-align: start;
+}
+.hero__bottom .hero__bottom-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 42px;
+  background-color: #0b9854;
+  color: #ffff;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.reviews__rating {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 18px;
+  color: #242424;
+}
+.reviews__reviews-count {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #242424;
+}
+
+.stars {
+  --percent: calc(4.5 / 5 * 100%);
+
+  display: inline-flex;
+  align-items: center;
+  font-size: 34px;
+  font-family: Times; // make sure ★ appears correctly
+  line-height: 1;
+  margin: 0 10px;
+
+  &::before {
+    content: "★★★★★";
+    letter-spacing: 6px;
+    background: linear-gradient(
+      90deg,
+      var(--palette-secondary-dark-green) var(--percent),
+      #fff var(--percent)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

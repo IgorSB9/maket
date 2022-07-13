@@ -6,6 +6,7 @@
   border-radius: 6px;
   cursor: pointer;
   white-space: nowrap;
+  font-weight: 700;
 
   @include media-breakpoint-down(xl) {
     font-size: 14px;
