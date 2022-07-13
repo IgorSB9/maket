@@ -1,0 +1,145 @@
+.services {
+  margin-top: 137px;
+  margin-bottom: 137px;
+  padding-top: 50px;
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Harabara";
+    font-size: 36px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    color: var(--palette-primary-bark-blue);
+    margin-bottom: 70px;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+      gap: 40px 29px;
+    }
+
+    @include media-breakpoint-between(sm, md) {
+      gap: 44px 28px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      gap: 48px 27px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      gap: 52px 26px;
+    }
+
+    @include media-breakpoint-between(xl, xxl) {
+      gap: 56px 25px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      gap: 60px 24px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f4f8fd;
+      box-shadow: 0px 3px 16px 4px rgba(29, 51, 107, 0.1);
+      border-radius: 16px;
+
+      @include media-breakpoint-down(sm) {
+        width: 145px;
+        height: 162px;
+        padding: 16px 8px;
+      }
+
+      @include media-breakpoint-between(sm, md) {
+        width: 180px;
+        height: 194px;
+        padding: 19px 11px;
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        width: 215px;
+        height: 226px;
+        padding: 21px 13px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        width: 245px;
+        height: 250px;
+        padding: 24px 16px;
+      }
+
+      @include media-breakpoint-between(xl, xxl) {
+        width: 285px;
+        height: 290px;
+        padding: 28px 19px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        width: 322px;
+        height: 320px;
+        padding: 33px 21px;
+      }
+
+      &-logo {
+        @include media-breakpoint-down(sm) {
+          margin-top: 20px;
+          width: 40%;
+          height: 40%;
+        }
+
+        @include media-breakpoint-between(sm, lg) {
+          margin-top: 25px;
+          width: 43%;
+          height: 43%;
+        }
+        @include media-breakpoint-between(lg, xl) {
+          margin-top: 25px;
+          width: 46%;
+          height: 46%;
+        }
+        @include media-breakpoint-up(xl) {
+          margin-top: 40px;
+          width: 49%;
+          height: 49%;
+        }
+      }
+
+      &-text {
+        font-family: "Harabara";
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--palette-primary-medium-blue);
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 12px;
+          line-height: 22px;
+        }
+
+        @include media-breakpoint-between(sm, lg) {
+          font-size: 14px;
+          line-height: 25px;
+        }
+
+        @include media-breakpoint-between(lg, xxl) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
