@@ -83,52 +83,6 @@
     }
   }
 
-  &__content {
-    display: flex;
-    line-height: 26px;
-    justify-content: space-between;
-    max-width: 1245px;
-    gap: 51px;
-
-    @include media-breakpoint-down(md) {
-      flex-direction: column;
-    }
-
-    &-item {
-      display: flex;
-      flex-direction: column;
-
-      &-text {
-        color: #242424;
-        font-size: 16px;
-        max-width: 553px;
-        font-family: "Montserrat";
-        text-align: start;
-      }
-      &-content {
-        margin-top: 16px;
-        display: grid;
-        gap: 30px;
-      }
-
-      &-title {
-        color: #0d6eb7;
-        font-family: "Harabara";
-        letter-spacing: 0.05em;
-        line-height: 38px;
-
-        @include media-breakpoint-down(lg) {
-          font-size: 20px;
-          text-align: center;
-        }
-
-        @include media-breakpoint-up(lg) {
-          font-size: 24px;
-        }
-      }
-    }
-  }
-
   &__bottom {
     display: flex;
     align-items: center;
