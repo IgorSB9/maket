@@ -1,55 +1,203 @@
 .footer {
-  margin-top: auto;
-  padding: 322px 120px 48px 21px;
+  position: relative;
+  margin-top: 303px;
+  display: flex;
+  flex-direction: column;
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: fill;
+    width: 100%;
+    z-index: -1;
+
+    &-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      object-fit: fill;
+      z-index: -1;
+    }
+  }
 
   &__top {
     position: relative;
-    background-color: blue;
     display: flex;
-    gap: 169px;
 
-    &-background {
-      position: absolute;
-      bottom: 0;
-      z-index: -1;
+    @include media-breakpoint-down(lg) {
+      gap: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      gap: 34px;
     }
 
     &-left {
       display: flex;
-      width: 202px;
+
+      @include media-breakpoint-down(md) {
+        gap: 24px;
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        gap: 20px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        gap: 40px;
+      }
+
+      @include media-breakpoint-between(xl, xxl) {
+        gap: 100px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        gap: 168px;
+      }
 
       &-assets {
         display: grid;
-        gap: 53px;
         margin-bottom: 50px;
+
+        @include media-breakpoint-down(lg) {
+          gap: 10px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          gap: 53px;
+        }
 
         &-logo {
           display: flex;
           align-items: center;
-          gap: 7px;
 
-          &-image {
-            width: 54px;
-            height: 51px;
+          @include media-breakpoint-down(md) {
+            width: 100%;
           }
 
-          &-title {
-            font-family: "Noto Sans";
-            font-weight: 800;
-            font-size: 22px;
-            line-height: 30px;
-            color: #ffffff;
+          @include media-breakpoint-between(md, xl) {
+            width: 90%;
+          }
+
+          @include media-breakpoint-up(xl) {
+            width: 100%;
           }
         }
 
         &-icons {
           display: flex;
           flex-wrap: wrap;
-          gap: 45px;
+
+          @include media-breakpoint-down(md) {
+            gap: 15px;
+          }
+
+          @include media-breakpoint-between(md, xl) {
+            gap: 25px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            gap: 45px;
+          }
 
           &-item {
-            width: 40px;
-            height: 40px;
+            @include media-breakpoint-down(md) {
+              width: 32px;
+              height: 32px;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+              width: 28px;
+              height: 28px;
+            }
+
+            @include media-breakpoint-between(lg, xl) {
+              width: 28px;
+              height: 28px;
+            }
+
+            @include media-breakpoint-between(xl, xxl) {
+              width: 38px;
+              height: 38px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+
+      &-nav {
+        margin-top: 16px;
+
+        @include media-breakpoint-down(md) {
+          min-width: 160px;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+          min-width: 180px;
+        }
+
+        @include media-breakpoint-between(lg, xl) {
+          min-width: 240px;
+        }
+
+        @include media-breakpoint-up(xl) {
+          min-width: 288px;
+        }
+
+        &-title {
+          font-family: "Harabara";
+          font-weight: 700;
+          line-height: 21px;
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+          color: var(--palette-background-default);
+
+          @include media-breakpoint-down(md) {
+            font-size: 20px;
+          }
+
+          @include media-breakpoint-between(md, xl) {
+            font-size: 16px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            font-size: 20px;
+          }
+        }
+
+        &-list {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          padding-top: 30px;
+          padding-left: 19px;
+
+          &-item {
+            display: flex;
+
+            &-link {
+              font-family: "Montserrat";
+              font-weight: 400;
+              line-height: 20px;
+              color: var(--palette-background-default);
+
+              @include media-breakpoint-down(md) {
+                font-size: 16px;
+              }
+
+              @include media-breakpoint-between(md, xl) {
+                font-size: 12px;
+              }
+
+              @include media-breakpoint-up(xl) {
+                font-size: 16px;
+              }
+            }
           }
         }
       }
@@ -57,33 +205,115 @@
 
     &-right {
       display: flex;
-      gap: 34px;
+
+      @include media-breakpoint-down(md) {
+        gap: 34px;
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        gap: 20px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        gap: 10px;
+      }
+
+      @include media-breakpoint-between(xl, xxl) {
+        gap: 17px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        gap: 34px;
+      }
 
       &-nav {
-        &-title {
+        margin-top: 16px;
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+          width: 100px;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+          width: 110px;
+        }
+
+        @include media-breakpoint-between(lg, xl) {
+          width: 160px;
+        }
+
+        @include media-breakpoint-up(xl) {
+          width: 200px;
+        }
+
+        &-text {
           font-family: "Harabara";
           font-weight: 700;
-          font-size: 20px;
           line-height: 21px;
           letter-spacing: 0.07em;
           text-transform: uppercase;
           color: var(--palette-background-default);
+          margin-bottom: 24px;
+
+          @include media-breakpoint-down(md) {
+            font-size: 20px;
+          }
+
+          @include media-breakpoint-between(md, xl) {
+            font-size: 16px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            font-size: 20px;
+          }
+        }
+
+        &-title {
+          font-family: "Harabara";
+          font-weight: 700;
+          line-height: 21px;
+          letter-spacing: 0.07em;
+          text-transform: uppercase;
+          color: var(--palette-background-default);
+
+          @include media-breakpoint-down(md) {
+            font-size: 20px;
+          }
+
+          @include media-breakpoint-between(md, xl) {
+            font-size: 16px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            font-size: 20px;
+          }
         }
 
         &-list {
           display: flex;
           flex-direction: column;
           gap: 18px;
-          padding-top: 28px;
-          padding-left: 19px;
+          padding-top: 30px;
+          padding-left: 28px;
 
           &-item {
             &-link {
               font-family: "Montserrat";
               font-weight: 400;
-              font-size: 16px;
               line-height: 20px;
               color: var(--palette-background-default);
+
+              @include media-breakpoint-down(md) {
+                font-size: 16px;
+              }
+
+              @include media-breakpoint-between(md, xl) {
+                font-size: 12px;
+              }
+
+              @include media-breakpoint-up(xl) {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -92,8 +322,50 @@
   }
 
   &__bottom {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 60px;
+    margin-top: 44px;
     background-color: #ffffff;
+
+    @include media-breakpoint-down(md) {
+      padding: 20px 40px 20px 40px;
+      gap: 40px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      padding: 20px 40px 20px 40px;
+      gap: 100px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      padding: 20px 60px 20px 60px;
+      gap: 200px;
+    }
+
+    @include media-breakpoint-between(xl, xxl) {
+      padding: 20px 80px 20px 80px;
+      gap: 300px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      padding: 20px 123px 20px 123px;
+      gap: 654px;
+    }
+
+    &-policy {
+      display: flex;
+      gap: 142px;
+    }
+
+    &-text {
+      font-family: "Open Sans";
+      font-weight: 400;
+      text-align: center;
+      font-size: 14px;
+      line-height: 19px;
+      color: #4c4c4c;
+    }
   }
 }
