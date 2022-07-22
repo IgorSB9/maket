@@ -1,20 +1,16 @@
 <footer class="footer">
-  <picture class="footer__background">
-    <source
-      media="(max-width: 768px)"
-      srcset="../../img/footer_adaptive-background"
-      type="image/webp"
-    />
-    <source media="(min-width: 768px)" srcset="../../img/footer_background.png" type="image/webp" />
-    <img
-      class="footer__background-image"
-      loading="lazy"
-      src="../../img/footer_background.png"
-      srcset="../../img/footer_adaptive-background"
-    />
-  </picture>
   <div class="container">
     <div class="footer__top">
+      <picture class="footer__background">
+        <source media="(max-width: 768px)" srcset="../../img/footer_adaptive-background.png" />
+        <source media="(min-width: 768px)" srcset="../../img/footer_background.png" />
+        <img
+          class="footer__background-image"
+          loading="lazy"
+          src="../../img/footer_background.png"
+          srcset="../../img/footer_adaptive-background.png"
+        />
+      </picture>
       <div class="footer__top-left">
         <div class="footer__top-left-assets">
           <svg
@@ -156,10 +152,10 @@
             </li>
           </ul>
         </div>
-        <div class="footer__top-right-nav">
-          <p class="footer__top-right-nav-text">products</p>
-          <p class="footer__top-right-nav-text">Portfolio</p>
-          <p class="footer__top-right-nav-text">Blog</p>
+        <div class="footer__top-right-navigation">
+          <p class="footer__top-right-navigation-text">products</p>
+          <p class="footer__top-right-navigation-text">Portfolio</p>
+          <p class="footer__top-right-navigation-text">Blog</p>
         </div>
         <div class="footer__top-right-nav">
           <p class="footer__top-right-nav-title">About us</p>
@@ -177,12 +173,12 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer__bottom">
-    <p class="footer__bottom-text">© 2021 - Stan’s Assets. All Right Reserved</p>
-    <div class="footer__bottom-policy">
-      <p class="footer__bottom-text">Privacy policy</p>
-      <p class="footer__bottom-text">Cookies policy</p>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">© 2021 - Stan’s Assets. All Right Reserved</p>
+      <div class="footer__bottom-policy">
+        <p class="footer__bottom-text">Privacy policy</p>
+        <p class="footer__bottom-text">Cookies policy</p>
+      </div>
     </div>
   </div>
 </footer>
