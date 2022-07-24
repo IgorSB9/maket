@@ -6,6 +6,8 @@
   border-radius: 6px;
   cursor: pointer;
   white-space: nowrap;
+  font-family: "Montserrat";
+  font-weight: 700;
 
   @include media-breakpoint-down(xl) {
   }
@@ -13,6 +15,7 @@
   &_variant--secondary {
     border: 2px solid var(--palette-secondary-dark-green);
     color: var(--palette-secondary-dark-green);
+    background-color: #ffffff;
 
     &:hover {
       background-color: var(--palette-secondary-dark-green);
