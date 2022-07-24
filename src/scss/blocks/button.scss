@@ -8,7 +8,6 @@
   white-space: nowrap;
 
   @include media-breakpoint-down(xl) {
-    font-size: 14px;
   }
 
   &_variant--secondary {
