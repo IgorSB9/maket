@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  font-weight: 700;
+  font-family: "Montserrat";
 
   @include media-breakpoint-down(xl) {
     padding-top: 10px;

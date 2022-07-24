@@ -15,6 +15,17 @@ var sectionProps = {
 <main>
   <%=_.template(require('./../sections/hero.html').default)()%>
   <%=_.template(require('./../sections/text.html').default)()%>
+  <%=_.template(require('./../sections/services.html').default)()%>
+  <%=_.template(require('./../sections/projects.html').default)()%>
+  <%=_.template(require('./../sections/lookingForAPartner.html').default)()%>
+  <%=_.template(require('./../sections/vrWebDevelopment.html').default)(sectionProps)%>
+  <%=_.template(require('./../sections/services.html').default)(sectionProps)%>
+  <%=_.template(require('./../sections/lookingForAPartner.html').default)(sectionProps)%>
+  <%=_.template(require('./../sections/text.html').default)(sectionProps)%>
+  <%=_.template(require('./../sections/projects.html').default)(sectionProps)%>
+  <%=_.template(require('./../sections/faq.html').default)(sectionProps)%>
+  <%=_.template(require('./../sections/faqs.html').default)()%>
 </main>
 <%=_.template(require('./../sections/footer.html').default)()%>
 <%=_.template(require('./../_html-bottom.html').default)()%>
+

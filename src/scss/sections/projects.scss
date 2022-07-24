@@ -1,0 +1,303 @@
+.projects {
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 158px;
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    padding-top: 100px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 211px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 580px;
+      padding-left: 30px;
+      padding-right: 33px;
+    }
+
+    @include media-breakpoint-between(sm, md) {
+      max-width: 580px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @include media-breakpoint-between(md, lg) {
+      max-width: 868px;
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+
+    @include media-breakpoint-between(lg, xl) {
+      max-width: 1092px;
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+
+    @include media-breakpoint-between(xl, xxl) {
+      max-width: 1380px;
+      padding-left: 46px;
+      padding-right: 46px;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: 1506px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "Harabara";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--palette-primary-bark-blue);
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 60px;
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+    }
+    @include media-breakpoint-between(lg, xl) {
+      margin-bottom: 80px;
+      font-size: 28px;
+      line-height: 30px;
+      letter-spacing: 0.1em;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 109px;
+      font-size: 36px;
+      line-height: 39px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &-arrow-left {
+      border-bottom: 9px solid var(--palette-secondary-light-blue);
+      border-right: 9px solid var(--palette-secondary-light-blue);
+      min-width: 30px;
+      height: 30px;
+      transform: rotate(135deg);
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+
+      &:hover {
+        border-bottom: 9px solid var(--palette-secondary-medium-blue3);
+        border-right: 9px solid var(--palette-secondary-medium-blue3);
+      }
+    }
+
+    &-arrow-right {
+      border-bottom: 9px solid var(--palette-secondary-light-blue);
+      border-right: 9px solid var(--palette-secondary-light-blue);
+      min-width: 30px;
+      height: 30px;
+      display: block;
+      transform: rotate(-45deg);
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+
+      &:hover {
+        border-bottom: 9px solid var(--palette-secondary-medium-blue3);
+        border-right: 9px solid var(--palette-secondary-medium-blue3);
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        align-items: center;
+        gap: 41px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-between(sm, md) {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-between(md, lg) {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-between(lg, xxl) {
+        gap: 35px;
+        margin-left: 26px;
+        margin-right: 26px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        gap: 80px;
+        margin-left: 42px;
+        margin-right: 42px;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+        border-radius: 16px;
+        overflow: hidden;
+
+        @include media-breakpoint-down(sm) {
+          width: 320px;
+          height: 390px;
+        }
+
+        @include media-breakpoint-between(sm, md) {
+          width: 80%;
+        }
+
+        @include media-breakpoint-between(md, lg) {
+          width: 30%;
+        }
+
+        @include media-breakpoint-between(lg, xl) {
+          width: 50%;
+        }
+
+        @include media-breakpoint-between(xl, xxl) {
+          width: 60%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          width: 100%;
+        }
+
+        &-top {
+          &-logo {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+          }
+        }
+
+        &-bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          @include media-breakpoint-down(md) {
+            padding: 7px 13px 16px;
+            gap: 0;
+          }
+
+          @include media-breakpoint-up(md) {
+            padding: 15px;
+            gap: 7px;
+          }
+
+          &-title {
+            font-family: "Harabara";
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--palette-primary-medium-blue);
+
+            @include media-breakpoint-down(md) {
+              line-height: 38px;
+              font-size: 18px;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+              line-height: 24px;
+              font-size: 16px;
+            }
+
+            @include media-breakpoint-between(lg, xl) {
+              line-height: 38px;
+              font-size: 18px;
+            }
+
+            @include media-breakpoint-between(xl, xxl) {
+              line-height: 38px;
+              font-size: 20px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+              line-height: 38px;
+              font-size: 24px;
+            }
+          }
+
+          &-description {
+            font-family: "Montserrat";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+
+            @include media-breakpoint-down(md) {
+              font-size: 16px;
+              line-height: 26px;
+            }
+
+            @include media-breakpoint-between(md, lg) {
+              font-size: 12px;
+              line-height: 20px;
+            }
+
+            @include media-breakpoint-up(lg) {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__background {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    object-fit: fill;
+
+    &-item {
+      min-height: 100%;
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+}
