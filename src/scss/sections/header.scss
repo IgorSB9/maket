@@ -94,6 +94,7 @@
 
     &-item {
       position: relative;
+      font-weight: 700;
 
       @include media-breakpoint-down(lg) {
         display: flex;

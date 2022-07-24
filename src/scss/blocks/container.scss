@@ -8,6 +8,16 @@
     max-width: $breakpoints-sm;
   }
 
+  @include media-breakpoint-down(md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @include media-breakpoint-between(md, lg) {
     max-width: $breakpoints-md;
   }

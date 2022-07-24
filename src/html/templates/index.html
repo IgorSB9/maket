@@ -13,6 +13,8 @@ var sectionProps = {
 <%=_.template(require('./../_html-top.html').default)(htmlTopProps)%>
 <%=_.template(require('./../sections/header.html').default)()%>
 <main>
+  <%=_.template(require('./../sections/hero.html').default)()%>
+  <%=_.template(require('./../sections/text.html').default)()%>
   <%=_.template(require('./../sections/services.html').default)()%>
   <%=_.template(require('./../sections/projects.html').default)()%>
   <%=_.template(require('./../sections/lookingForAPartner.html').default)()%>

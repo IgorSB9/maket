@@ -9,11 +9,14 @@
 @import "base/reboot";
 
 // Blocks
+@import "blocks/breadcrums.scss";
 // ...
 
 // Sections
 @import "sections/header";
 @import "sections/footer";
+@import "sections/hero";
+@import "sections/text";
 @import "sections/services";
 @import "sections/projects";
 @import "sections/lookingForAPartner";
@@ -23,5 +26,8 @@
 
 // Templates
 // ...
-@import "blocks/container";
-@import "blocks/button";
+@import "blocks/container.scss";
+@import "blocks/button.scss";
+@import "blocks/content.scss";
+@import "blocks/text.scss";
+=======
