@@ -30,11 +30,7 @@
     max-width: $breakpoints-xl;
   }
 
-  @include media-breakpoint-between(xxl, xxxl) {
+  @include media-breakpoint-up(xxl) {
     max-width: $breakpoints-xxl;
-  }
-
-  @include media-breakpoint-up(xxxl) {
-    max-width: $breakpoints-xxxl;
   }
 }
