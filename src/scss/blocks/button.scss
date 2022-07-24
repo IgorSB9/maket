@@ -1,0 +1,31 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  @include media-breakpoint-down(xl) {
+  }
+
+  &_variant--secondary {
+    border: 2px solid var(--palette-secondary-dark-green);
+    color: var(--palette-secondary-dark-green);
+
+    &:hover {
+      background-color: var(--palette-secondary-dark-green);
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: var(--palette-secondary-light-green2);
+    }
+  }
+
+  &_theme--primary {
+    background-color: var(--palette-secondary-dark-green);
+    color: #ffffff;
+  }
+}

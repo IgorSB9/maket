@@ -1,14 +1,62 @@
+<input id="menu__toggle" type="checkbox" />
+
 <header class="header">
-  <img src="../../img/header_logo.png" class="header__logo" />
-  <nav class="header__nav">
-    <ul class="header__nav-list">
-      <li class="header__nav-item"><a>SERVICES</a></li>
-      <li class="header__nav-item"><a>TECHNOLOGIES</a></li>
-      <li class="header__nav-item"><a>PRODUCTS</a></li>
-      <li class="header__nav-item"><a>PORTFOLIO</a></li>
-      <li class="header__nav-item"><a>BLOG</a></li>
-      <li class="header__nav-item"><a>ABOUT US</a></li>
-    </ul>
-  </nav>
-  <button class="header__button">CONTACT US</button>
+  <div class="container header-container">
+    <img src="../../img/header_logo.png" class="header__logo" />
+    <div class="header__content">
+      <div class="header__menu">
+        <ul class="header__stack">
+          <li class="header__stack-item">
+            <ul class="header__stack-item-submenu">
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">MOBILE APPLICATION DEVELOPMENT</a>
+              </li>
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">GAME DEVELOPMENT OUTSOURCING</a>
+              </li>
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">VR APP DEVELOPMENT</a>
+              </li>
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">DEDICATED DEVELOPERS</a>
+              </li>
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">SDK DEVELOPMENT</a>
+              </li>
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">3D MODELING SERVICES</a>
+              </li>
+              <li class="header__stack-item-submenu-item">
+                <a href="/#">AR APP DEVELOPMENT</a>
+              </li>
+            </ul>
+            <a class="header__stack-item-link" href="/#">SERVICES </a>
+          </li>
+          <li class="header__stack-item">
+            <ul class="header__stack-item-submenu"></ul>
+            <a class="header__stack-item-link" href="/#">TECHNOLOGIES </a>
+          </li>
+          <li class="header__stack-item">
+            <a class="header__stack-item-link" href="/#">PRODUCTS</a>
+          </li>
+          <li class="header__stack-item">
+            <a class="header__stack-item-link" href="/#">PORTFOLIO</a>
+          </li>
+          <li class="header__stack-item">
+            <a class="header__stack-item-link" href="/#">BLOG</a>
+          </li>
+          <li class="header__stack-item">
+            <ul class="header__stack-item-submenu"></ul>
+            <a class="header__stack-item-link" href="/#">ABOUT US </a>
+          </li>
+        </ul>
+
+        <button class="button button_variant--secondary">CONTACT US</button>
+      </div>
+
+      <label class="menu__btn" for="menu__toggle">
+        <span class="burger__button"></span>
+      </label>
+    </div>
+  </div>
 </header>
