@@ -3,16 +3,32 @@
 
   @include media-breakpoint-down(sm) {
     padding-top: 129px;
+    margin-top: 63px;
+    margin-bottom: 189px;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-between(sm, md) {
+    padding-top: 200px;
+    margin-top: 63px;
+    margin-bottom: 200px;
+  }
+
+  @include media-breakpoint-between(md, xl) {
+    padding-top: 200px;
+    margin-top: 63px;
+    margin-bottom: 400px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-top: 244px;
     padding-top: 212px;
     padding-left: 82px;
+    margin-bottom: 371px;
   }
 
   &__title {
     font-family: "Harabara";
-    color: #ffff;
+    color: var(--palette-background-default);
     text-align: center;
 
     @include media-breakpoint-down(md) {
@@ -37,7 +53,7 @@
   &__description {
     font-family: "Montserrat";
     font-weight: 400;
-    color: #ffff;
+    color: var(--palette-background-default);
     text-align: center;
 
     @include media-breakpoint-down(md) {

@@ -40,7 +40,7 @@
   }
 
   &__top-title {
-    color: #194484;
+    color: var(--palette-primary-bark-blue);
     font-family: "Harabara";
     letter-spacing: 0.06em;
 
@@ -123,14 +123,14 @@
           font-family: "Montserrat";
           font-weight: 700;
           font-size: 18px;
-          color: #242424;
+          color: var(--palette-primary-main);
         }
 
         &-count {
           font-family: "Montserrat";
           font-weight: 400;
           font-size: 16px;
-          color: #242424;
+          color: var(--palette-primary-main);
         }
 
         &-stars {
@@ -139,7 +139,7 @@
           display: inline-flex;
           align-items: center;
           font-size: 34px;
-          font-family: Times; // make sure ★ appears correctly
+          font-family: Times;
           line-height: 1;
           margin: 0 10px;
 
@@ -149,7 +149,7 @@
             background: linear-gradient(
               90deg,
               var(--palette-secondary-dark-green) var(--percent),
-              #fff var(--percent)
+              var(--palette-background-default) var(--percent)
             );
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -159,15 +159,9 @@
     }
 
     &-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
       width: 220px;
       height: 42px;
       font-size: 16px;
-      background-color: var(--palette-secondary-dark-green);
-      color: #ffff;
     }
   }
 }

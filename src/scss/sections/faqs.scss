@@ -1,6 +1,6 @@
 .faqs {
   @include media-breakpoint-down(sm) {
-    margin-top: 154px;
+    margin-top: 270px;
     padding: 0;
   }
 
@@ -16,14 +16,17 @@
 
   @include media-breakpoint-between(lg, xl) {
     padding: 87px 100px 50px 100px;
+    margin-top: 100px;
   }
 
   @include media-breakpoint-between(xl, xxl) {
     padding: 117px 160px 130px 160px;
+    margin-top: 150px;
   }
 
   @include media-breakpoint-up(xxl) {
     padding: 147px 272px 203px 272px;
+    margin-top: 246px;
   }
 
   &__container {
@@ -101,7 +104,15 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+
+    @include media-breakpoint-down(md) {
+      gap: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      gap: 17px;
+    }
 
     &::before,
     &::after {
@@ -135,6 +146,7 @@
 
     &-list {
       display: grid;
+      flex: 1 1;
 
       @include media-breakpoint-down(md) {
         gap: 30px;
@@ -183,7 +195,6 @@
         }
 
         @include media-breakpoint-up(xxl) {
-          padding-right: 104px;
           font-size: 20px;
           line-height: 30px;
         }
@@ -222,7 +233,7 @@
     }
 
     @include media-breakpoint-up(xl) {
-      margin: 68px 61px 0px 61px;
+      margin: 51px 61px 0;
       padding-left: 0;
     }
 
@@ -230,32 +241,27 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      background: #ffffff;
+      background: var(--palette-background-default);
       overflow: hidden;
+      position: relative;
 
       @include media-breakpoint-down(md) {
         padding-left: 3px;
-        margin: 0px 30px 19px 15px;
+        margin: 0 30px 19px 15px;
       }
 
       @include media-breakpoint-up(md) {
-        padding-bottom: 18px;
+        padding-top: 18px;
         padding-left: 3px;
       }
 
       &::after {
         content: "";
+        position: absolute;
+        bottom: 0;
         min-height: 1px;
         width: 100%;
         background-color: var(--palette-primary-medium-blue);
-
-        @include media-breakpoint-down(md) {
-          margin-top: 12px;
-        }
-
-        @include media-breakpoint-up(md) {
-          margin-top: 18px;
-        }
       }
 
       &-title {
@@ -300,10 +306,19 @@
         font-size: 16px;
         line-height: 26px;
         max-height: 0;
-        padding: 0 1em;
         color: var(--palette-primary-main);
-        transition-duration: 0.35s;
+        transition-duration: 0.5s;
         overflow: hidden;
+        transform: scaleY(0);
+        transform-origin: top;
+
+        @include media-breakpoint-down(md) {
+          padding: 12px 39px 4px 32px;
+        }
+
+        @include media-breakpoint-up(md) {
+          padding: 14px 10px 0 32px;
+        }
       }
     }
   }
@@ -321,15 +336,10 @@ input:checked {
       transform: rotate(-135deg);
     }
   }
+
   ~ .faqs__accordions-item-content {
     max-height: 100vh;
-
-    @include media-breakpoint-down(md) {
-      padding: 12px 39px 4px 32px;
-    }
-
-    @include media-breakpoint-up(md) {
-      padding: 14px 10px 0px 32px;
-    }
+    transform: scaleY(1);
+    padding-bottom: 18px;
   }
 }

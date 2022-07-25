@@ -15,11 +15,11 @@
   &_variant--secondary {
     border: 2px solid var(--palette-secondary-dark-green);
     color: var(--palette-secondary-dark-green);
-    background-color: #ffffff;
+    background-color: var(--palette-background-default);
 
     &:hover {
       background-color: var(--palette-secondary-dark-green);
-      color: #ffffff;
+      color: var(--palette-background-default);
     }
 
     &:active {
@@ -29,6 +29,11 @@
 
   &_theme--primary {
     background-color: var(--palette-secondary-dark-green);
-    color: #ffffff;
+    color: var(--palette-background-default);
+
+    &:hover {
+      background-color: var(--palette-secondary-light-green2);
+      color: var(--palette-background-default);
+    }
   }
 }
